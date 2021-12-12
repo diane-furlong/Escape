@@ -1,0 +1,90 @@
+#rainbow {
+    visibility: hidden;
+    width: 700px;
+}
+
+.nextbtn {
+    visibility: hidden;
+}
+
+#container{
+    width: 404px;
+    height: 500px;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  #playground {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #3f4c6b;
+    position: relative;
+    
+  }
+  #endScreen{
+    width: 404px;
+    height: 404px;
+    position: absolute;
+    top: 19px;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background: #3f4c6b;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 );
+    color: #fff;
+  
+  }
+  #endCount, #endSeconds{
+    font-weight: bold;
+  }
+  #timer, #counter{
+    padding: 5px;
+    font-family: calibri;
+  }
+  #timer span, #counter span{
+     font-weight: bold;
+  }
+  #timer{
+    float: right;
+  }
+  #counter {
+    float: left;
+  }
+  #start {
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    line-height: 50px;
+    text-align: center;
+    font-family: calibri;
+    font-size: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    background: #f85032;
+    border: 2px solid #666;
+    color: #666;
+  }
+  
+  #win{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #666;
+    background: #f2f6f8;  
+  }
+
+  #game2image{
+      visibility: hidden;
+  }
+
+  #game2body{
+    cursor:zoom-in;
+  }
+
+  #container{
+    width: 100%;
+  }
