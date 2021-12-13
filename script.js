@@ -33,20 +33,20 @@ $(document).ready(function() {
 
     //game 1
     $('#b1').click(function(){
-        $(this).css('background-color','red');
+        $(this).css('background-color','white');
 
         $('#b4').click(function(){
-            $(this).css('background-color','orange');
+            $(this).css('background-color','white');
             $('#b3').click(function(){
-                $(this).css('background-color','yellow');
+                $(this).css('background-color','white');
                 $('#b2').click(function(){
-                    $(this).css('background-color','green');
+                    $(this).css('background-color','white');
                     $('#b7').click(function(){
-                        $(this).css('background-color','blue');
+                        $(this).css('background-color','white');
                         $('#b6').click(function(){
-                            $(this).css('background-color','indigo');
+                            $(this).css('background-color','white');
                             $('#b5').click(function(){
-                                $(this).css('background-color','violet');
+                                $(this).css('background-color','white');
                                 $('#rainbow').css('visibility','visible')
                                 $('#nextbtn1').css('visibility','visible')
                             })
@@ -87,18 +87,28 @@ $(document).ready(function() {
     })
 
     //game 3
+    $('#santaPhoto').on('mouseover', function() {
+        $('#santaClaus').attr('src', './santaslist.png').push($('#santaClaus').attr('id', 'santasList'))  
+    }) 
+    $('#santaPhoto').on('mouseout', function() {
+            $('#santasList').attr('src', './santaclaus.png').push($('#santasList').attr('id', 'santaClaus'))
+    })
+    
     $("#check-code").click(function(){
         console.log("clicked");
         var codeinput = $("#code-input").val()
-        if (codeinput === 'xxx') {
+        if (codeinput === '1225') {
             console.log("matched")
             $("#game3image").css('visibility','visible')
-            if(nameinput === 'Tawana') {
-                var xx = function() {
-                    location.replace('./game4.html');
-                };
-                xx()
-            }
-        }
+            $('#nextbtn3').css('visibility','visible')
+        };
+        $('#nextbtn3').click(function(){
+            location.replace('./winner.html');
+        })
     })
+
+    //winner
+    $('#finalGift').on('click', function() {
+        $('#giftPic').attr('src', './giftVoucher.png')  
+    }) 
 })
